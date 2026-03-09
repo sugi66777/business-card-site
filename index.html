@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F8F5F0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="description" content="Sugi M — Architect &amp; Interior Designer, Plan Spacez, Chennai" />
+  <meta property="og:title" content="Sugi M — Architect &amp; Interior Designer" />
+  <meta property="og:description" content="Award-winning architect and professional interior designer based in Chennai. Founder of Plan Spacez." />
+  <meta property="og:type" content="website" />
+  <title>Sugi M — Architect &amp; Interior Designer | Plan Spacez</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=6" />
+  <link rel="stylesheet" href="css/components.css?v=6" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       SPLASH SCREEN
+  ══════════════════════════════════════════ -->
+  <div id="splash" class="splash" aria-hidden="true">
+    <img src="assets/images/Sugi-Logo-removebg-preview.png" alt="Plan Spacez" class="splash__logo" />
+    <div class="splash__bar"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CUSTOM CURSOR
+  ══════════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__logo">
+      <span class="nav__logo-name">Sugi M</span>
+      <span class="nav__logo-title">Plan Spacez</span>
+    </div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#services" class="nav__link">Services</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+      <li class="nav__theme-item">
+        <span class="nav__theme-label">Theme</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-toggle__track"></span>
+          <span class="theme-toggle__thumb"><i class="fas fa-sun"></i></span>
+        </button>
+      </li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle theme-toggle--desktop" id="themeToggleDesktop" aria-label="Toggle dark/light mode">
+        <span class="theme-toggle__track"></span>
+        <span class="theme-toggle__thumb"><i class="fas fa-sun"></i></span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-up">Welcome to my world of design</p>
+      <h1 class="hero__name reveal-up">Plan Spacez</h1>
+      <div class="hero__divider reveal-up"><span></span></div>
+      <p class="hero__title reveal-up">Architect &amp; Professional Interior Designer</p>
+      <p class="hero__tagline reveal-up">
+        "Designing spaces that speak without words —<br />where form meets purpose, and beauty meets function."
+      </p>
+      <div class="hero__cta reveal-up">
+        <a href="https://wa.me/919043166777" class="btn btn--whatsapp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> WhatsApp Me
+        </a>
+        <a href="#projects" class="btn btn--outline">
+          <i class="fas fa-eye"></i> View My Work
+        </a>
+        <button class="btn btn--gold" id="heroVcard">
+          <i class="fas fa-address-card"></i> Save Contact
+        </button>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text reveal-left">
+          <p class="section__eyebrow">About Me</p>
+          <h2 class="section__title">Crafting Spaces<br />with Intent &amp; Soul</h2>
+          <div class="gold-line"></div>
+          <p class="about__bio">
+            With years of experience in architecture and interior design, Sugi M has crafted spaces that
+            blend aesthetics with functionality — from luxury residences and corporate offices to hospitality
+            projects and vibrant public spaces across Chennai and beyond.
+          </p>
+          <p class="about__bio">
+            As the founder of <strong>Plan Spacez</strong>, the philosophy is simple: every space tells a story.
+            The design approach marries bold architectural vision with the warmth of thoughtful interiors —
+            creating environments that inspire, comfort, and endure.
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number">21+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">400+</span>
+              <span class="stat__label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">400+</span>
+              <span class="stat__label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__photo reveal-right">
+          <div class="about__photo-frame">
+            <img src="assets/images/profile.jpg" alt="Sugi M — Architect &amp; Interior Designer" class="about__img" />
+            <div class="about__photo-accent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section class="section section--dark" id="services">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <p class="section__eyebrow">What I Do</p>
+        <h2 class="section__title">Services</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="services__grid">
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-card__icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3 class="service-card__title">Architecture Design</h3>
+          <p class="service-card__desc">
+            From concept to completion — residential, commercial, and institutional buildings designed with precision and vision.
+          </p>
+        </div>
+        <div class="service-card reveal-up" data-delay="1">
+          <div class="service-card__icon"><i class="fas fa-couch"></i></div>
+          <h3 class="service-card__title">Interior Design</h3>
+          <p class="service-card__desc">
+            Curating interiors that reflect your personality. Materials, lighting, furniture, and art — orchestrated as one.
+          </p>
+        </div>
+        <div class="service-card reveal-up" data-delay="2">
+          <div class="service-card__icon"><i class="fas fa-hard-hat"></i></div>
+          <h3 class="service-card__title">Civil Contracting</h3>
+          <p class="service-card__desc">
+            End-to-end civil construction — from structural work and finishing to site supervision, delivered on time and to specification.
+          </p>
+        </div>
+        <div class="service-card reveal-up" data-delay="3">
+          <div class="service-card__icon"><i class="fas fa-paintbrush"></i></div>
+          <h3 class="service-card__title">Interior Turnkey</h3>
+          <p class="service-card__desc">
+            Complete turnkey interior solutions — design, procurement, execution, and handover under one roof, hassle-free.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS / PORTFOLIO
+  ══════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <p class="section__eyebrow">My Work</p>
+        <h2 class="section__title">Selected Projects</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="portfolio__grid">
+
+        <div class="portfolio-card reveal-up" data-delay="0"
+             data-title="The Skyline Residence"
+             data-category="Architecture & Interior Design"
+             data-desc="A bespoke residential project unifying bold architectural form with refined interiors. Every space was crafted to balance natural light, material warmth, and the client's lifestyle — resulting in a home that feels both sculptural and deeply liveable."
+             data-img="assets/images/project-1.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-1.jpg" alt="The Skyline Residence" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Architecture & Interior Design</span>
+            <h3 class="portfolio-card__title">The Skyline Residence</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="1"
+             data-title="Lumière Living Room"
+             data-category="Interior Design"
+             data-desc="A statement living space designed around a curated palette of warm neutrals, brushed gold accents, and layered textures. Custom furniture, bespoke lighting, and art curation came together to create an atmosphere of understated luxury."
+             data-img="assets/images/project-2.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-2.jpg" alt="Lumière Living Room" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Design</span>
+            <h3 class="portfolio-card__title">Lumière Living Room</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="2"
+             data-title="Casa Verdana Villa"
+             data-category="Residential Architecture"
+             data-desc="A contemporary villa designed for a family in Chennai, blending tropical climate considerations with modern architectural language. Features double-height volumes, open courtyards, and a seamless indoor-outdoor connection."
+             data-img="assets/images/project-3.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-3.jpg" alt="Casa Verdana Villa" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Residential Architecture</span>
+            <h3 class="portfolio-card__title">Casa Verdana Villa</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="3"
+             data-title="Maison Turnkey Suite"
+             data-category="Interior Turnkey"
+             data-desc="A complete turnkey interior delivered on time and on budget — from concept drawings to final handover. Scope included flooring, false ceiling, custom joinery, electrical, plumbing, furniture supply, and final styling."
+             data-img="assets/images/project-4.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-4.jpg" alt="Maison Turnkey Suite" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Turnkey</span>
+            <h3 class="portfolio-card__title">Maison Turnkey Suite</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="4"
+             data-title="The Foundation Project"
+             data-category="Civil Contracting"
+             data-desc="End-to-end civil construction executed with precision — from RCC structural work and brickwork to plastering, waterproofing, and finishing. Delivered ahead of schedule with zero compromise on quality standards."
+             data-img="assets/images/project-5.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-5.jpg" alt="The Foundation Project" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Civil Contracting</span>
+            <h3 class="portfolio-card__title">The Foundation Project</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="5"
+             data-title="The Amber Bedroom"
+             data-category="Interior Design"
+             data-desc="A master bedroom retreat conceived around comfort and calm. Warm amber tones, a tufted headboard wall, recessed lighting, and bespoke wardrobes came together to deliver a space that feels like a five-star sanctuary."
+             data-img="assets/images/project-6.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-6.jpg" alt="The Amber Bedroom" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Design</span>
+            <h3 class="portfolio-card__title">The Amber Bedroom</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="0"
+             data-title="Aurum Corporate Office"
+             data-category="Architecture & Interior Design"
+             data-desc="A modern corporate workspace designed to inspire productivity and reflect the client's brand identity. Open-plan workstations, collaborative zones, a premium boardroom, and a welcoming reception were seamlessly integrated."
+             data-img="assets/images/project-7.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-7.jpg" alt="Aurum Corporate Office" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Architecture & Interior Design</span>
+            <h3 class="portfolio-card__title">Aurum Corporate Office</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="1"
+             data-title="Prestige Turnkey Apartment"
+             data-category="Interior Turnkey"
+             data-desc="A 3BHK luxury apartment delivered as a complete turnkey package — design, material procurement, civil, carpentry, painting, and furnishing executed under one roof. Handed over move-in ready within the agreed timeline."
+             data-img="assets/images/project-8.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-8.jpg" alt="Prestige Turnkey Apartment" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Turnkey</span>
+            <h3 class="portfolio-card__title">Prestige Turnkey Apartment</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="2"
+             data-title="Serene Heights Bungalow"
+             data-category="Residential Architecture"
+             data-desc="A ground-plus-two residential bungalow designed for a multigenerational family. The design prioritises natural ventilation, privacy between floors, and a generous landscaped garden — rooted in Chennai's climate and culture."
+             data-img="assets/images/project-9.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-9.jpg" alt="Serene Heights Bungalow" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Residential Architecture</span>
+            <h3 class="portfolio-card__title">Serene Heights Bungalow</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="3"
+             data-title="The Onyx Kitchen & Dining"
+             data-category="Interior Design"
+             data-desc="A bold kitchen and dining space designed around dramatic black onyx surfaces, integrated appliances, and under-cabinet lighting. The island doubles as a breakfast counter and social hub — functional elegance at its best."
+             data-img="assets/images/project-10.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-10.jpg" alt="The Onyx Kitchen & Dining" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Design</span>
+            <h3 class="portfolio-card__title">The Onyx Kitchen &amp; Dining</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="4"
+             data-title="Meridian Build — Phase II"
+             data-category="Civil Contracting"
+             data-desc="Phase II civil contracting for a mixed-use development — comprising slab casting, brick masonry, external plastering, terrace waterproofing, and MEP rough-in work. Supervised and executed to specification by the Plan Spacez civil team."
+             data-img="assets/images/project-11.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-11.jpg" alt="Meridian Build — Phase II" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Civil Contracting</span>
+            <h3 class="portfolio-card__title">Meridian Build — Phase II</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="5"
+             data-title="The Grand Foyer"
+             data-category="Architecture & Interior Design"
+             data-desc="An imposing entrance foyer designed to make a lasting first impression. A double-height ceiling, statement chandelier, marble flooring with brass inlay, and a sculptural staircase set the tone for the entire home."
+             data-img="assets/images/project-12.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-12.jpg" alt="The Grand Foyer" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Architecture & Interior Design</span>
+            <h3 class="portfolio-card__title">The Grand Foyer</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="0"
+             data-title="Blanc Turnkey Home"
+             data-category="Interior Turnkey"
+             data-desc="A minimalist all-white turnkey home completed for a young professional couple. Clean lines, integrated storage, concealed lighting, and carefully chosen soft furnishings create an atmosphere of serene, contemporary living."
+             data-img="assets/images/project-13.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-13.jpg" alt="Blanc Turnkey Home" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Turnkey</span>
+            <h3 class="portfolio-card__title">Blanc Turnkey Home</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-up" data-delay="1"
+             data-title="The Velvet Lounge"
+             data-category="Interior Design"
+             data-desc="A luxurious home lounge and entertainment room designed with deep jewel tones, velvet upholstery, a custom bar unit, and a state-of-the-art AV setup. Every detail was considered to create a space that entertains in style."
+             data-img="assets/images/project-14.jpg">
+          <div class="portfolio-card__img-wrap">
+            <img src="assets/images/project-14.jpg" alt="The Velvet Lounge" class="portfolio-card__img" />
+            <div class="portfolio-card__overlay"><i class="fas fa-expand"></i><span>View Project</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__cat">Interior Design</span>
+            <h3 class="portfolio-card__title">The Velvet Lounge</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modal -->
+  <div class="modal" id="portfolioModal" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal__img-wrap">
+        <img src="" alt="" class="modal__img" id="modalImg" />
+      </div>
+      <div class="modal__content">
+        <span class="modal__cat" id="modalCat"></span>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════════ -->
+  <section class="section section--dark" id="skills">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <p class="section__eyebrow">Expertise</p>
+        <h2 class="section__title">Skills &amp; Proficiency</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="skills__grid">
+        <div class="skills__col reveal-left">
+          <div class="skill-bar" data-percent="95">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">Architectural Design</span>
+              <span class="skill-bar__pct">95%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="92">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">Interior Design</span>
+              <span class="skill-bar__pct">92%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="88">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">Space Planning</span>
+              <span class="skill-bar__pct">88%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="85">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">3D Visualisation</span>
+              <span class="skill-bar__pct">85%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+        </div>
+        <div class="skills__col reveal-right">
+          <div class="skill-bar" data-percent="90">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">AutoCAD / Revit</span>
+              <span class="skill-bar__pct">90%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="80">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">SketchUp / Lumion</span>
+              <span class="skill-bar__pct">80%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="87">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">Project Management</span>
+              <span class="skill-bar__pct">87%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="82">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">Client Consultation</span>
+              <span class="skill-bar__pct">82%</span>
+            </div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Soft skill tags -->
+      <div class="skill-tags reveal-up">
+        <span class="skill-tag">Sustainable Design</span>
+        <span class="skill-tag">Lighting Design</span>
+        <span class="skill-tag">Landscape Architecture</span>
+        <span class="skill-tag">Concept Development</span>
+        <span class="skill-tag">Material Sourcing</span>
+        <span class="skill-tag">Site Analysis</span>
+        <span class="skill-tag">Building Codes</span>
+        <span class="skill-tag">Adobe Suite</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <p class="section__eyebrow">Get In Touch</p>
+        <h2 class="section__title">Let's Build Something Beautiful</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="contact__grid">
+        <a href="tel:+919043166777" class="contact-card reveal-up" data-delay="0">
+          <div class="contact-card__icon"><i class="fas fa-phone"></i></div>
+          <span class="contact-card__label">Phone</span>
+          <span class="contact-card__value">+91 90431 66777</span>
+        </a>
+        <a href="mailto:sugi@planspacez.com" class="contact-card reveal-up" data-delay="1">
+          <div class="contact-card__icon"><i class="fas fa-envelope"></i></div>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">sugi@planspacez.com</span>
+        </a>
+        <a href="https://wa.me/919043166777" class="contact-card reveal-up" data-delay="2" target="_blank" rel="noopener">
+          <div class="contact-card__icon"><i class="fab fa-whatsapp"></i></div>
+          <span class="contact-card__label">WhatsApp</span>
+          <span class="contact-card__value">Chat on WhatsApp</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sugi-m-894677b" class="contact-card reveal-up" data-delay="3" target="_blank" rel="noopener">
+          <div class="contact-card__icon"><i class="fab fa-linkedin-in"></i></div>
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">linkedin.com/in/sugi-m</span>
+        </a>
+        <a href="https://instagram.com/planspacez" class="contact-card reveal-up" data-delay="4" target="_blank" rel="noopener">
+          <div class="contact-card__icon"><i class="fab fa-instagram"></i></div>
+          <span class="contact-card__label">Instagram</span>
+          <span class="contact-card__value">@planspacez</span>
+        </a>
+        <div class="contact-card reveal-up" data-delay="5" style="cursor:default;">
+          <div class="contact-card__icon"><i class="fas fa-location-dot"></i></div>
+          <span class="contact-card__label">Office</span>
+          <span class="contact-card__value" style="font-size:0.82rem;line-height:1.6;">No 27, Little Mount, Saidapet<br />Near Chellamaal College Signal<br />Chennai &mdash; 600015</span>
+        </div>
+      </div>
+      <!-- vCard CTA -->
+      <div class="vcard-cta reveal-up">
+        <p>Add me to your contacts in one tap</p>
+        <button class="btn btn--gold btn--lg" id="vcardBtn">
+          <i class="fas fa-address-card"></i> Save My Contact
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <p class="footer__copy">&copy; <span id="year"></span> Sugi M &mdash; Plan Spacez. All rights reserved.</p>
+    <p class="footer__made">Crafted with precision &amp; passion.</p>
+  </footer>
+
+  <!-- Floating Save Contact Button -->
+  <button class="float-btn" id="fabVcard" aria-label="Save Contact">
+    <i class="fas fa-address-card"></i>
+  </button>
+
+  <!-- ══════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════ -->
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
